@@ -1,0 +1,25 @@
+img{
+    width: 100%;
+}
+.blueline{
+    height: 70px;
+    width: 10px;
+    background-color: $blueline;
+    margin-right: 25px;
+}
+.activetext{
+    border-bottom: 5px solid #05F3F3 !important;
+    padding-bottom: 5px;
+    color: #000000;
+    opacity:100% !important;
+}
+.shadow{
+    width: 80%;
+    height: 233px;
+    background-image: linear-gradient(#feffff, #f0f1f378);
+    position: relative;
+    top: 55%;
+    left: 1%;
+    margin: -10% auto 0;
+    z-index:-1;
+}

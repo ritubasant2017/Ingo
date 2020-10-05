@@ -1,0 +1,374 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: sans-serif; }
+
+body {
+  line-height: 1;
+  background-color: #f0f1f3b8;
+  background-image: url(/assets/images/augustine-wong-PxypFiQMkIk-unsplash.png);
+  background-repeat: no-repeat;
+  background-position: 88% 0%; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: #000;
+  text-decoration: none; }
+
+input, select {
+  vertical-align: middle; }
+
+img {
+  width: 100%; }
+
+.blueline {
+  height: 70px;
+  width: 10px;
+  background-color: #05F3F3;
+  margin-right: 25px; }
+
+.activetext {
+  border-bottom: 5px solid #05F3F3 !important;
+  padding-bottom: 5px;
+  color: #000000;
+  opacity: 100% !important; }
+
+.shadow {
+  width: 80%;
+  height: 233px;
+  background-image: linear-gradient(#feffff, #f0f1f378);
+  position: relative;
+  top: 55%;
+  left: 1%;
+  margin: -10% auto 0;
+  z-index: -1; }
+
+section {
+  width: 62%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto; }
+
+.header {
+  display: flex;
+  flex: space-between;
+  justify-content: space-between;
+  height: 168px;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%; }
+  .header__menu {
+    display: flex; }
+  .header__list {
+    flex: auto;
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600; }
+  .header__icon {
+    display: none; }
+
+.container__description, .container__image {
+  flex: 1 1 20em; }
+.container__section {
+  width: 1323px;
+  height: 233px;
+  background-image: linear-gradient(#feffff, #f0f1f378);
+  position: absolute;
+  top: 480px;
+  left: -142px; }
+.container__title {
+  font-size: 40px;
+  width: 76%;
+  line-height: 50px;
+  margin-top: 60px; }
+.container__text {
+  width: 100%;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 29px 0;
+  font-weight: 600; }
+.container__property {
+  height: 100%;
+  width: 60%;
+  position: relative;
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite; }
+@keyframes rotation {
+  from {
+    right: -40%; }
+  to {
+    right: 18%; } }
+.container__btn {
+  text-transform: uppercase;
+  width: 193px;
+  height: 42px;
+  background-color: #05F3F3;
+  border: none;
+  font-weight: 600;
+  display: block; }
+
+.solutions {
+  align-items: center; }
+  .solutions__image {
+    flex: 1 1 20em; }
+  .solutions__text {
+    font-size: 24px;
+    line-height: 32px;
+    flex: 1 1 20em; }
+  .solutions__toptext {
+    display: flex;
+    flex-direction: row; }
+  .solutions__bottom {
+    padding: 36px 0px 0px 36px; }
+  .solutions__consumer {
+    height: 64px;
+    font-style: italic; }
+
+.ingo__left img, .ingo__right img {
+  width: 95%; }
+.ingo__toptext {
+  display: flex;
+  margin: 50px 0;
+  width: 100%; }
+.ingo__title {
+  margin: 0; }
+.ingo__text {
+  margin-top: 15px;
+  line-height: 20px;
+  font-size: 14px; }
+
+.videoimage {
+  width: 80%; }
+  .videoimage__dimension {
+    width: 100%;
+    height: 100%; }
+
+.ingohelp {
+  display: block;
+  text-align: center; }
+  .ingohelp__maintitle {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 24px; }
+  .ingohelp__title {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 600; }
+  .ingohelp__subtitle {
+    font-size: 24px;
+    margin: 30px 0;
+    font-weight: 600;
+    margin-right: 23px;
+    border: none;
+    opacity: 15%;
+    background: transparent; }
+    .ingohelp__subtitle:focus {
+      outline: none; }
+  .ingohelp__ingohelp {
+    font-size: 12px;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .ingohelp__menu {
+    position: relative;
+    display: inline-block;
+    height: 124px;
+    width: auto;
+    margin: 19px 11px;
+    border-radius: 8px;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+    .ingohelp__menu:hover {
+      opacity: 1; }
+  .ingohelp__text {
+    position: absolute; }
+  .ingohelp__title {
+    font-size: 20px;
+    color: #05F3F3; }
+  .ingohelp__explore {
+    color: #ffffff; }
+
+.customerview {
+  display: block;
+  text-align: center;
+  align-items: center;
+  position: relative; }
+  .customerview__title {
+    margin: 30px 0;
+    font-weight: 600;
+    font-size: 24px; }
+  .customerview__shadow {
+    width: 92%;
+    left: 4%;
+    height: 278px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 18%; }
+  .customerview__description {
+    justify-content: space-between;
+    display: flex;
+    width: 945px;
+    height: 346px;
+    margin: 90px auto;
+    background-color: #ffffff;
+    box-shadow: 7px 11px 23px 0px #d7e0f1de; }
+  .customerview__slideshow {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    margin: auto; }
+  .customerview__dot {
+    height: 8px;
+    width: 8px;
+    margin: 40px 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  .customerview__active {
+    background-color: #717171; }
+  .customerview__fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+  .customerview__numbertext {
+    color: #232020;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 5%;
+    width: 50%;
+    line-height: 24px;
+    top: 59px;
+    font-style: italic;
+    text-align: left; }
+  .customerview__detail {
+    margin-bottom: 10px; }
+  .customerview__customerview__head {
+    font-style: normal; }
+  .customerview__writer {
+    font-style: normal;
+    font-size: 14px; }
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+.aboutingo {
+  position: relative;
+  width: 80%; }
+  .aboutingo__description {
+    position: absolute;
+    color: #ffffff;
+    top: 22%;
+    left: 35%;
+    text-align: center; }
+  .aboutingo__title {
+    color: #05F3F3;
+    font-size: 24px;
+    margin-bottom: 27px; }
+  .aboutingo__emaildetail {
+    font-size: 16px;
+    margin-bottom: 50px; }
+  .aboutingo__email {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    width: 376px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 8px; }
+  .aboutingo__btn {
+    display: block;
+    margin: 32px auto;
+    text-transform: uppercase;
+    width: 165px;
+    height: 42px;
+    background-color: #05F3F3;
+    border: none;
+    font-weight: 600; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #D8D8D8; }
+  .footer__services, .footer__address {
+    margin-bottom: 60px;
+    width: 45%; }
+  .footer__title {
+    font-size: 24px;
+    margin: 30px 0;
+    font-weight: 600; }
+  .footer__service {
+    width: 100%; }
+  .footer__detail {
+    margin-bottom: 30px;
+    line-height: 22px; }
+  .footer .footer__land {
+    margin-right: 35px;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #000000; }
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px; }
+  .copyright__terms {
+    display: flex; }
+  .copyright__policy, .copyright__condition {
+    margin-left: 40px;
+    font-weight: 600; }
+
+/*# sourceMappingURL=home.css.map */

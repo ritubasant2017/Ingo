@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="98px" height="98px" viewBox="0 0 98 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 62 (101010) - https://sketch.com -->
+    <title>65B20795-51D0-4B22-AA59-D3D737A208E6</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M45,0 C20.14875,0 0,20.14875 0,45 C0,69.85125 20.14875,90 45,90 C69.85125,90 90,69.85125 90,45 C90,20.14875 69.85125,0 45,0 Z" id="path-1"></path>
+        <filter x="-7.8%" y="-5.6%" width="115.6%" height="115.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="inGo-Electric---home" transform="translate(-671.000000, -2655.000000)">
+            <g id="iconmonstr-video-13" transform="translate(675.000000, 2657.000000)">
+                <g id="Shape" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#05F3F3" xlink:href="#path-1"></use>
+                </g>
+                <path d="M49.6752212,36.0686725 L60.983129,53.4074644 C61.5865197,54.3326636 61.3256425,55.5718305 60.4004433,56.1752212 C60.0754746,56.3871573 59.6958789,56.5 59.3079078,56.5 L36.6920922,56.5 C35.5875227,56.5 34.6920922,55.6045695 34.6920922,54.5 C34.6920922,54.1120289 34.8049349,53.7324332 35.016871,53.4074644 L46.3247788,36.0686725 C46.9281695,35.1434734 48.1673364,34.8825961 49.0925356,35.4859869 C49.3251053,35.6376628 49.5235453,35.8361027 49.6752212,36.0686725 Z" id="Triangle" fill="#000000" transform="translate(48.000000, 45.000000) rotate(-270.000000) translate(-48.000000, -45.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
