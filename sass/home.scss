@@ -1,24 +1,53 @@
 @import './reset';
 @import './variables';
 @import './common';
+@import './mq';
 
 section{
     width: 62%;
     display: flex;
     justify-content: space-between;
     margin: 50px auto;
+    @include mq($from: mobile, $until: tablet) {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    @include mq($from: tablet, $until: wide) {
+        width: 88%;
+    }
 }
 
 .header{
     display: flex;
-    flex: space-between;
     justify-content: space-between;
     height: 168px;
     align-items: center;
     margin: 0 auto;
     width: 60%;
+    @include mq($from: mobile, $until: tablet) {
+        width: 88%;
+    }
+    @include mq($from: tablet, $until: wide) {
+        width: 88%;
+    }
     &__menu{
         display: flex;
+        overflow: hidden;
+       @include mq($until: tablet) {
+            display: none;
+        }
+       
+    }
+    &__responsive{   
+       @include mq($until: tablet) {
+            position: absolute;
+            top: 21%;
+            width: 100%;
+            background-color: $white-color;
+            right: 0;
+            z-index: 1;
+            display: block;
+        }
     }
     &__list{
             flex: auto;
@@ -26,15 +55,33 @@ section{
             font-size: 14px;
             line-height: 20px;
             font-weight: 600;
+           @include mq($until: tablet) {
+            float: none;
+            display: block;
+            text-align: left;
+            padding: 19px;
+            }
         }
     &__icon{
         display: none;
+       @include mq($until: tablet) {
+            display: block;
+            position: absolute;
+            right: 19px;
+            top: 61px;
+              
+        }
     }
 }
 
 .container{
+    @include mq(tablet){
+        flex-wrap: wrap;
+    }
     &__description, &__image{
         flex: 1 1 20em;
+        margin-top: 25px;
+
     }
     &__section{
         width: 1323px;
@@ -46,7 +93,7 @@ section{
     }
     &__title{
         font-size: 40px;
-        width: 76%;
+        width: 72%;
         line-height: 50px;
         margin-top: 60px;
       }
@@ -91,6 +138,10 @@ section{
         font-size: 24px;
         line-height: 32px;
         flex: 1 1 20em;
+        margin-left: 40px;
+       @include mq($until: tablet) {
+            margin: 20px 0 0 0;
+        }
     }
     &__toptext{
         display: flex;
@@ -98,6 +149,12 @@ section{
     }
     &__bottom{
         padding: 36px 0px 0px 36px;
+       @include mq($until: tablet) {
+        padding: 80px 0px 0px 36px;
+        }
+        @include mq(tablet) {
+            padding: 70px 0px 0px 36px;
+        }
     }
     &__consumer{
             height: 64px;         
@@ -202,11 +259,19 @@ section{
     text-align: center;
     align-items: center;
     position: relative;
-    
+   @include mq($until: tablet) {
+        width: 95%;
+    }
     &__title{
         margin: 30px 0;
         font-weight: 600;
         font-size: 24px;    
+    }
+    &__image{
+       @include mq($until: tablet) {
+        width: 36%;
+        float: left;
+        }
     }
     &__shadow{
         width: 92%;
@@ -227,7 +292,6 @@ section{
     }
     &__slideshow {
         width: 100%;
-        max-width: 1000px;
         position: relative;
         margin: auto;
     }
@@ -260,6 +324,11 @@ section{
         top: 59px;
         font-style: italic;
         text-align: left;  
+       @include mq($until: tablet) {
+        right: 0px;
+        width: 63%;
+        line-height: 17px;
+        }
     }
     &__detail{
         margin-bottom: 10px;
@@ -286,14 +355,19 @@ section{
 .aboutingo{
     position: relative;
     width: 80%;
+    text-align: center;
+    justify-content: center;
+   @include mq($until: tablet) {
+        width: 95%;
+        height: 330px;
+    }
  
-&__description{
+    &__description{
         position: absolute;
         color: $white-color;
-        top: 22%;
-        left: 35%;
-        text-align: center;
-}
+        top: 13%;
+        text-align: center;        
+     }
 &__title{
         color:$enquiry-button;
         font-size: 24px;;
@@ -301,13 +375,13 @@ section{
 }
 &__emaildetail{
         font-size: 16px;
-        margin-bottom: 50px;
+        margin-bottom: 32px;
 }
 &__email{
         border: none;
         background: transparent;
         border-bottom: 1px solid #fff;
-        width: 376px;
+        width: 77%;
         color: $white-color;
         text-align: center;
         font-size: 14px;
@@ -315,7 +389,7 @@ section{
 }
 &__btn{
         display: block;
-        margin: 32px auto;
+        margin: 17px auto;
         text-transform: uppercase;
         width: 165px;
         height: 42px;
@@ -334,6 +408,9 @@ section{
 &__services,&__address{
     margin-bottom: 60px;
     width: 45%;
+   @include mq($until: tablet) {
+        width: 100%;
+    }
 }
 &__title{
     font-size: 24px;
@@ -349,7 +426,7 @@ section{
 
 }
 
-.footer__land{
+&__land{
     margin-right: 35px;
     font-size: 14px;
     text-decoration: underline;
@@ -368,6 +445,9 @@ section{
 &__policy, &__condition{
     margin-left: 40px;
     font-weight: 600;
+   @include mq($until: tablet) {
+        margin: 10px;
+    }
  }
 }
 

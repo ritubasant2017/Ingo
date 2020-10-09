@@ -1,13 +1,14 @@
 //JS for navbar
 
-function myFunction() {
+ function myFunction() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    if (x.className === "header__menu") {
+        x.className += " header__responsive";
     } else {
-        x.className = "topnav";
+        x.className = "header__menu";
     }
-}
+} 
+
 
 //End of JS for navbar
 

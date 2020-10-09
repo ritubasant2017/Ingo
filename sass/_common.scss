@@ -1,3 +1,5 @@
+@import './mq';
+
 img{
     width: 100%;
 }
@@ -22,4 +24,12 @@ img{
     left: 1%;
     margin: -10% auto 0;
     z-index:-1;
+    @include mq(mobile,tablet) {
+        display: none;
+    }
 }
+.topnav li, .dropdown .dropbtn {
+    @include mq(mobile,tablet) {
+    display: none;
+    }
+  }
